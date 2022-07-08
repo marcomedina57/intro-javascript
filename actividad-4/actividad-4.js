@@ -49,16 +49,14 @@ for(let i = 1; i<=100; i++){
 
 // Bonus 
 
+let resultado;
+let resultadoJugador;
+while(resultado !== Number(resultadoJugador)){
+    const numUnDigito = Math.floor(Math.random() * 10);
+    const numTresDigitos = Math.floor(Math.random() * 999)
+    resultado = numUnDigito * numTresDigitos;
 
-const numUnDigito = Math.floor(Math.random() * 10);
-const numDosDigitos = Math.floor(Math.random() * 1000)
-
-const resultado = numUnDigito * numDosDigitos;
-
-const resultadoJugador = prompt(`Cual es el resultado de multiplicar ${numUnDigito} x ${numDosDigitos}? : `);
-
-    if (resultado === Number(resultadoJugador)) {
-        alert("ganaste");
-    } else {
-        alert("Incorrecto")
-    }
+      resultadoJugador = prompt(`Cual es el resultado de multiplicar ${numUnDigito} x ${numTresDigitos}? : `);
+    if (resultado === Number(resultadoJugador))
+    alert("Ganaste");
+}
