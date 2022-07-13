@@ -2,13 +2,10 @@
 
 // 1.- reciba dos parametros y retorne true o false si contiene palabra
 
-const contienePalabra = (cadena = "", textoBuscar) => {
-    if (cadena.includes(textoBuscar)){
-        return true
-    }
+const contienePalabra = (cadena = "", textoBuscar) => cadena.includes(textoBuscar)
 
-    return false;
-}
+
+console.log(contienePalabra("Marco", "a"))
 
 // 2.- encuentra la suma de elementos 
 
@@ -42,6 +39,7 @@ const ocurrenciasPalabra = (cadena, textoBuscar) => {
 
 }
 
+console.log(ocurrenciasPalabra("Marco hola", "a"))
 
 // 5 .- valro de arreglo
 
