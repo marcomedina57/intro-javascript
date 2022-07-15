@@ -3,10 +3,11 @@
 1. What’s the result of executing this code and why.
   ```js
   function test() {
+    var a;
      console.log(a);
      console.log(foo());
      
-     var a = 1;
+     a = 1;
      function foo() {
         return 2;
      }
@@ -15,8 +16,8 @@
   test();
   ```
 
-> _your answer here_
-> _console answer_
+>1 y 2
+> undefined y 2 
 
 
 2. What is result?
@@ -36,8 +37,8 @@
   var firstResult = someFunction(9);
   var result = firstResult(2);
   ```
-> _your answer here_
-> _console answer_
+>  undefined
+> undefined
 
 
 3. What is the result of the following code? Explain your answer.
@@ -55,8 +56,8 @@
   var baz = foo();
   baz();
   ``` 
-> _your answer here_
-> _console answer_
+> undefined
+> 2
 
 
 4. What will you see in the console for the following example?
@@ -70,5 +71,5 @@
   b(); 
   ```
 
-> _your answer here_
-> _console answer_
+> undefined
+> undefined
